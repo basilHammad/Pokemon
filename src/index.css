@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+#root {
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #f4f7fb;
+}
+
+ul {
+  list-style: none;
+}

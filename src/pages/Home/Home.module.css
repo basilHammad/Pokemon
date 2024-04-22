@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(188 188 188/40%);
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.wrapper > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
