@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+**README.md**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vite React Project
 
-Currently, two official plugins are available:
+This project is set up with Vite and React. Below are the instructions to set up the environment and run the project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Environment Variables
 
-## Expanding the ESLint configuration
+Create a `.env` file in the root directory of your project. in package.json you can modify the dev script with the desired BASE_API_URL or You can use .env file to define environment-specific variables. For example:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+VITE_BASE_API_URL=http://example.com/api
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Development
+
+To start the application in development mode, run the following command:
+
+```bash
+npm run dev
+```
+
+This will start the development server and open your default browser with the application.
+
+## Testing
+
+To run tests for the project, execute the following command:
+
+```bash
+npm run test
+```
+
+This will execute the test suite for the project.
+
+---
+
